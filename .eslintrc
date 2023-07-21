@@ -1,11 +1,11 @@
 {
-  "extends": ["eslint:recommended","plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": ["eslint:recommended"],
   "parserOptions": {
-    "parser": "@typescript-eslint/parser",
-    "plugins": ["@typescript-eslint"],
     "ecmaVersion": 9,
-    "sourceType": "module",
-    "project": "tsconfig.json"
+    "sourceType": "module"
+    //"project": "tsconfig.json"
   },
   "env": {
     "shared-node-browser": true,
