@@ -6,7 +6,7 @@
     "node": true,
     "es6": true
   },
-  "plugins": "@typescript-eslint",
+  "plugins": ["@typescript-eslint"],
   "rules": {
     "no-console": "error",
     "no-debugger": "error",
