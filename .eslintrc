@@ -1,7 +1,11 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "@babel"],
   "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "sourceType": "module"
+  },
   "env": {
     "shared-node-browser": true,
     "node": true,
@@ -13,6 +17,7 @@
     "no-unused-vars": "error",
     "no-undef": "off",
     "no-redeclare": "off",
-    "prefer-const": "off"
+    "prefer-const": "off",
+    "@babel/semi": ["error", "never"]
   }
 }
