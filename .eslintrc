@@ -1,13 +1,17 @@
 {
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
-  "extends": ["eslint:recommended"],
-  "rules": {
-    "no-console": "error",
-    "no-debugger": "error",
-    "no-unused-vars": "error",
-    "no-undef": "off",
-    "no-redeclare": "off",
-    "prefer-const": "off"
-  }
+  "env" : {
+    "browser" : true,
+    "commonjs" : true,
+    "es2021" : true
+  },
+  "parserOptions" : {
+    "ecmaFeatures" : {
+      "jsx" : true
+    },
+    "sourceType" : "module",
+    "parser" : "@typescript-eslint/parser",
+    "plugins" : "@typescript-eslint"
+  },
+  "extends" : [ "eslint:recommended", "plugin:@typescript-eslint/recommended" ],
+  "rules" : { }
 }
